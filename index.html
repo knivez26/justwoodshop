@@ -46,6 +46,18 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+// Customizing the theme color
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v15.0'
+  });
+
+  // Changing the theme color
+  FB.CustomerChat.update({
+    theme_color: '#e9ac4f' // Set your desired color code here
+  });
+};
     </script>
 </body>
 
