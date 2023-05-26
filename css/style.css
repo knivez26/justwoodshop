@@ -1,6 +1,5 @@
 
 /*
-Free Bootstrap Themes : https://www.Zerotheme.com
 */
 
 
@@ -8,12 +7,28 @@ Free Bootstrap Themes : https://www.Zerotheme.com
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime);
 
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
-body {font-family: 'Merriweather', serif;color: #666;background: #fff;font-size: 14px;line-height: 1.6em;font-weight: 400;}
-html, body {width:100%; padding:0; margin:0;}
+body {
+  font-family: 'Courier Prime', serif;
+  color: #666;
+  background: url('http://drive.google.com/uc?export=view&id=1fb06fw3h-uVPGRiXo6N1pCMWFPpVMTDH');
+  font-size: 14px;
+  line-height: 1.6em;
+  font-weight: bold;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+ 
 
 ::-moz-selection{background:#000;color:#fff;text-shadow:none}
 ::selection{background:#000;color:#fff;text-shadow:none}
@@ -91,9 +106,9 @@ hr{max-width: 50px;
 /* ----------------------------------Navbar------------------------------------ */
 /* ---------------------------------------------------------------------------- */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background: none;}
-.navbar-default {border-color: #fff;background-color: #222;border: none;}
+.navbar-default {border-color: #fff;background-color: #c6a572;border: none;}
 .navbar-default h1.navbar-brand {font-family: "Pacifico",sans-serif;font-size: 41px;font-weight: 500;margin: 0;}
-.navbar-default h1.navbar-brand a{color: #c64e4e !important;}
+.navbar-default h1.navbar-brand a{color: #964B00 !important;}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -101,10 +116,10 @@ hr{max-width: 50px;
 
 .navbar-default .navbar-collapse {border-color: rgba(255,255,255,.02);}
 
-.navbar-default .navbar-toggle {border: none;background-color: #F05F40;}
+.navbar-default .navbar-toggle {border: none;background-color: #c6a572;}
 .navbar-default .navbar-toggle span.icon-bar{background-color: #fff;}
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {background-color: #F05F40;}
+.navbar-default .navbar-toggle:focus {background-color: #c6a572;}
 
 .navbar-default .nav li a {text-transform: uppercase;font-family: Helvetica,Arial,sans-serif;font-weight: bold;letter-spacing: 1px;color: #555;}
 .navbar-default .nav li a:hover,
@@ -289,7 +304,7 @@ article img{width:auto;}
 /* ---------------------------------------------------------------------------- */
 /* ----------------------------------Footer------------------------------------ */
 /* ---------------------------------------------------------------------------- */
-footer{color: #555;background-color:#FFB246;font-size: 13px;}
+footer{color: #555;background-color:#c6a572;font-size: 20px;}
 footer ul {padding: 0;margin-top: 10px;}
 footer ul li{list-style: none;}
 footer a {color: #999;text-decoration: underline;}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<title>Justwood</title>
+
+  <body style="background-color:#c6a572;">
+<center><img src="http://drive.google.com/uc?export=view&id=15cA1s2xveBqzyXbrHvlId2P3w3WIc39M"></center>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Image-Tab-Gallery-Horizontal.js">
+</script>
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104514431289327");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+// Customizing the theme color
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v15.0'
+  });
+
+  // Changing the theme color
+  FB.CustomerChat.update({
+    theme_color: '#e9ac4f' // Set your desired color code here
+  });
+};
+    </script>
+</body>
+
+</html>
