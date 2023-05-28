@@ -1,6 +1,7 @@
 <html>
 <head>
   <!-- META DATA -->
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -105,10 +106,10 @@ window.fbAsyncInit = function() {
                         <a class="page-scroll" href="#">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">About</a>
+                        <a class="page-scroll" href="#About">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Location</a>
+                        <a class="page-scroll" href="#Location">Location</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#">Contact Us</a>
@@ -173,25 +174,29 @@ window.fbAsyncInit = function() {
 			<div class="container">
 				<div class="row heading">
 					 <div class="col-lg-12">	
-	                    <h2>Classy yet affordable woodcrafts and home decoration</h2>
-	                    <hr>
-                    	<div class="intro"></div>
-	                </div>
-				</div>
-				<div class="categories">
-				  <ul class="cat">
-					<li>
-						<ol class="type list-inline">
-							
-						</ol>
-					</li>
-				  </ul>
-				  <div class="clearfix"></div>
-				</div>
-				
+
+  <h2>Classy yet affordable woodcrafts and home decoration</h2>
+<head>
+  
+  <div class="categories">
+    <ul class="cat">
+      <li>
+        <ol class="type list-inline">
+         <li><a href="#" data-filter=".new" autoclick>New items</a></li>
+          <li><a href="#" data-filter=".small">Small items</a></li>
+          <li><a href="#" data-filter=".regular">Regular items</a></li>
+          <li><a href="#" data-filter=".large">Large items</a></li>
+          <li><a href="#" data-filter=".must">Must have</a></li>
+        </ol>
+      </li>
+  
+</body>
+ 
+
+
 				<div class="row">
 					<div class="portfolio-items">
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 							<div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -208,7 +213,7 @@ window.fbAsyncInit = function() {
 								<span><center>INDUSTRIAL</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 						  <div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -225,7 +230,7 @@ window.fbAsyncInit = function() {
 								<span><center>SOLIHIYA</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 						  <div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -242,7 +247,7 @@ window.fbAsyncInit = function() {
 								<span><center>TV RACK</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 						  <div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -259,7 +264,7 @@ window.fbAsyncInit = function() {
 								<span><center>KITCHEN CABINET/ORGANIZER</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 						  <div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -292,7 +297,7 @@ window.fbAsyncInit = function() {
 								<span><center>SHELVES</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 							<div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -309,7 +314,7 @@ window.fbAsyncInit = function() {
 								<span><center>STUDY TABLE/WORKING DESK</span>
 							</div>					
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 lake_wanaka">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 							<div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -326,7 +331,7 @@ window.fbAsyncInit = function() {
 					<span><center>BEDWARDROBE</span>
 							</div>					
 						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 lake_wanaka">
+						<div class="col-sm-6 col-md-3 col-lg-3 new">
 							<div class="post">
 								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
 									<div class="item-caption">
@@ -452,9 +457,22 @@ window.fbAsyncInit = function() {
 					</div>
 				</div>
 			</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var items = document.querySelectorAll('.portfolio-items .post');
+  var maxItemsToShow = 12; // Change this value to limit the number of items shown
+  
+  // Hide items beyond the maximum limit
+  for (var i = maxItemsToShow; i < items.length; i++) {
+    items[i].style.display = 'none';
+  }
+});
+</script>
 		</section>
 
+
 		<!-- ////////////Content Box 04 -->
+<div id ="About"></div>
 		<section class="box-content box-4 box-style-1" id="news">
 			<div class="container">
 				<div class="row heading">
@@ -467,6 +485,7 @@ window.fbAsyncInit = function() {
 <h2></h2>
 
 	<!-- ////////////Content Box 05-->
+<div id ="Location"></div>
 		<section class="box-content box-4 box-style-1" id="news">
 			<div class="container">
 				<div class="row heading">
@@ -484,8 +503,8 @@ Malolos, Bulacan</div>
   <title>Google Maps Location with Marker</title>
    <style>
     #map {
-      width: 100%;
-      height: 0;
+      width: 40%;
+      height: 40%;
       padding-bottom: 56.25%; /* 16:9 aspect ratio */
     }
   </style>
@@ -511,7 +530,50 @@ Malolos, Bulacan</div>
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3LTMCUYATYkLMNe9eeK1TqCISddthvb4&callback=initMap" async defer></script>
 </body>
+<br>
+<br>
+<br>
+  <style>
+    /* Adjust the size of the icons */
+    .contact-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
 
+    /* Align the logos in the middle */
+    .contact-icons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+
+  <div class="contact-icons-container">
+    <a href="https://www.facebook.com/justwood2020" target="_blank">
+      <img class="contact-icon" src="fb.png" alt="Facebook">
+      fb.com/justwood2020
+    </a>
+
+    <a href="mailto:yourname@gmail.com" target="_blank">
+      <img class="contact-icon" src="gmail.png" alt="Gmail">
+      justwood2002@gmail.com
+    </a>
+
+    <a href="https://www.instagram.com/youraccount" target="_blank">
+      <img class="contact-icon" src="insta.png" alt="Instagram">
+      @justwood2002
+    </a>
+
+    <a href="tel:+1234567890">
+      <img class="contact-icon" src="phone.png" alt="Phone">
+09554292444/09959861072
+    </a>
+  </div>
 <h2></h2>
 					</div> 
 					<div class="col-footer col-md-4 widget_recent_entries">
