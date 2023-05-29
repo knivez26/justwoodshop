@@ -32,7 +32,9 @@
 }
 
 .top-container {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .h1, h1 {
