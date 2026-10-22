@@ -5,7 +5,7 @@
   <meta name="description" content="Justwood creates warm, timeless furniture from reclaimed Philippine hardwood. Explore handcrafted pieces for every room.">
   <meta name="theme-color" content="#f8f6f2"><title>Justwood — Furniture with a Past, Made for Your Future</title>
   <link rel="icon" href="favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/justwood-v4.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/justwood-v5.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a><div class="announcement">Made with reclaimed Philippine hardwood <span>•</span> Visit our Bulacan showroom</div>
@@ -20,6 +20,11 @@
       <div class="hero-note"><span>01</span><p>Furniture with a past,<br>made for your future.</p></div><a class="scroll-cue" href="#collections">Scroll to discover ↓</a>
     </section>
     <section class="section intro reveal" id="collections"><div><p class="eyebrow">The collection</p><h2>Pieces for a home<br>that feels like yours.</h2></div><p class="lead">From sculptural Solihiya storage to generous dining tables, discover furniture designed to be lived with and loved for years.</p></section>
+    <section class="home-gallery section-wide" aria-label="Justwood furniture in the showroom">
+      <figure class="home-gallery-main reveal"><img loading="lazy" src="assets/photos/showroom-38.jpg" alt="Justwood dining table and Solihiya chairs arranged in the showroom"><figcaption><span>Gather well</span><small>Dining, made warmer</small></figcaption></figure>
+      <figure class="home-gallery-top reveal"><img loading="lazy" src="assets/photos/showroom-37.jpg" alt="Handcrafted Justwood Solihiya cabinets and natural home accents"><figcaption><span>Natural order</span><small>Storage with character</small></figcaption></figure>
+      <figure class="home-gallery-bottom reveal"><img loading="lazy" src="assets/photos/showroom-02.jpg" alt="Justwood woven baskets, timber furniture, and warm lighting"><figcaption><span>Layered living</span><small>Wood, weave, and light</small></figcaption></figure>
+    </section>
     <section class="category-grid section-wide" aria-label="Shop by collection">
       <a class="category-card reveal" href="#shop" data-filter-link="Solihiya"><img loading="lazy" src="assets/catalog-2026/1.webp" alt="Justwood Solihiya collection"><span>Solihiya</span><small>Explore collection ↗</small></a>
       <a class="category-card reveal" href="#shop" data-filter-link="Sofas"><img loading="lazy" src="assets/catalog-2026/51.webp" alt="Justwood sofa collection"><span>Sofas</span><small>Explore collection ↗</small></a>
@@ -31,7 +36,12 @@
       <div class="shop-toolbar reveal"><div class="filters" role="group" aria-label="Product filters"><button class="active" data-filter="All">All</button><button data-filter="Solihiya">Solihiya</button><button data-filter="Sofas">Sofas</button><button data-filter="Dining">Dining</button><button data-filter="Bedroom">Bedroom</button><button data-filter="Storage">Storage &amp; more</button></div><label class="search-field"><span class="sr-only">Search products</span><input id="productSearch" type="search" placeholder="Search collection"><span>⌕</span></label></div>
       <div class="product-grid" id="productGrid"></div><p class="empty-state" id="emptyState" hidden>No pieces match that search. Try another word or category.</p>
     </section>
-    <section class="editorial" id="story"><div class="editorial-image reveal"><img loading="lazy" src="assets/photos/showroom-02.jpg" alt="Close view of warm wood furniture and woven storage"><span>Natural materials, honest character</span></div>
+    <section class="editorial" id="story"><div class="editorial-carousel reveal" aria-roledescription="carousel" aria-label="Natural materials and handcrafted details"><div class="editorial-track">
+      <figure class="editorial-slide active"><img loading="lazy" src="assets/photos/showroom-02.jpg" alt="Warm wood furniture and woven storage in the Justwood showroom"></figure>
+      <figure class="editorial-slide"><img loading="lazy" src="assets/photos/showroom-05.jpg" alt="Handcrafted timber cabinet with natural decorative pieces"></figure>
+      <figure class="editorial-slide"><img loading="lazy" src="assets/photos/showroom-10.jpg" alt="Solid wood dining furniture styled in the Justwood showroom"></figure>
+      <figure class="editorial-slide"><img loading="lazy" src="assets/photos/showroom-36.jpg" alt="Reclaimed wood furniture with warm natural textures"></figure>
+    </div><span class="editorial-label">Natural materials, honest character</span><div class="editorial-controls"><button type="button" data-editorial-prev aria-label="Previous image">←</button><div class="editorial-dots" aria-label="Choose gallery image"><button type="button" class="active" data-editorial-dot="0" aria-label="Show image 1"></button><button type="button" data-editorial-dot="1" aria-label="Show image 2"></button><button type="button" data-editorial-dot="2" aria-label="Show image 3"></button><button type="button" data-editorial-dot="3" aria-label="Show image 4"></button></div><button type="button" data-editorial-next aria-label="Next image">→</button></div></div>
       <div class="editorial-copy reveal"><p class="eyebrow">Our philosophy</p><h2>Designed for living.<br><em>Made to last.</em></h2><p>Justwood began during the uncertainty of 2020 with a simple belief: good material deserves another life. Reclaimed hardwood from old Philippine homes is renewed into furniture with warmth, utility, and a story already in its grain.</p><div class="principles"><div><b>01</b><span>Reclaimed<br>hardwood</span></div><div><b>02</b><span>Thoughtful<br>craft</span></div><div><b>03</b><span>Timeless<br>form</span></div></div><a class="text-link" href="#contact">Meet Justwood <span>↗</span></a></div>
     </section>
     <section class="section" id="lookbook"><div class="section-heading reveal"><div><p class="eyebrow">The lookbook</p><h2>Warmth, in every corner.</h2></div><p>Real rooms and pieces from the Justwood collection—layered in timber, cane, and tactile natural finishes.</p></div>
@@ -47,5 +57,5 @@
   <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle"><button class="close" data-close aria-label="Close details">×</button><div id="modalContent"></div></div>
   <div class="modal image-modal" id="imageModal" role="dialog" aria-modal="true" aria-hidden="true"><button class="close" data-close aria-label="Close image">×</button><img id="modalImage" alt="Expanded lookbook view"></div>
   <nav class="mobile-nav" id="mobileNav" aria-hidden="true"><button class="close" data-close aria-label="Close menu">×</button><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#story">Our story</a><a href="#lookbook">Lookbook</a><a href="#contact">Contact</a></nav><div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="js/justwood-v3.js"></script>
+  <script src="js/justwood-v4.js"></script>
 </body></html>
