@@ -6,8 +6,7 @@
 .hero-content{top:46%;max-width:min(700px,76vw)}
 .hero-content.reveal.visible{transform:translateY(-50%)}
 .hero-note{max-width:360px;bottom:32px}
-.scroll-cue{bottom:32px}
-@media(max-width:900px){.hero{height:auto;min-height:760px}.hero-content{top:45%;max-width:88vw}.hero h1{font-size:clamp(54px,9vw,76px);line-height:.92}.hero-content>p:not(.eyebrow){margin:22px 0 28px;max-width:500px}.scroll-cue{display:none}}
+@media(max-width:900px){.hero{height:auto;min-height:760px}.hero-content{top:45%;max-width:88vw}.hero h1{font-size:clamp(54px,9vw,76px);line-height:.92}.hero-content>p:not(.eyebrow){margin:22px 0 28px;max-width:500px}}
 @media(max-width:600px){.hero{min-height:720px}.hero-content{top:46%}.hero h1{font-size:clamp(46px,14vw,58px)}.hero-content>p:not(.eyebrow){margin:18px 0 24px}.hero-buttons{gap:14px}}
 .brand img{width:58px;height:58px;border-radius:50%;object-fit:cover}.site-header .brand img{box-shadow:0 0 0 1px rgba(41,40,36,.12)}footer .brand{font-size:initial}footer .brand img{width:104px;height:104px;box-shadow:0 0 0 1px rgba(255,255,255,.16)}
 @media(max-width:600px){.brand img{width:50px;height:50px}}
